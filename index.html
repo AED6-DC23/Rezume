@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+     
+</head>
+<body>
+    <header>
+      <h1> Моё резюме  </h1>
+    </header>
+    
+  <div class="flex-container">
+    
+    <div id="left">
+      <img src="image1.jpg" alt="avatar of a man">
+        <h2 id="name"> Иван <br> Шаповалов </h2>
+        <h3 id="jobTitle"> FullStack - разработчик </h3>
+          <hr id="mainHR">
+     
+        <div>
+          <h3> Контакты </h3>
+          <h4> Адрес </h4>
+            <p> Russia,<br>34 Volgograd,<br> Secret </p>
+          <h4> Email </h4>
+           <p>FullStack@email.com</p>
+          <h4> Phone </h4>
+           <p>+7 999 923 99 33</p>
+        </div>
+        <h3> Профиль </h3>
+        <p id="justified"> Этот профиль содержит всю необходимую информацию обо мне и моих знаниях в HTML CSS.
+        </p>
+      
+      </div>
+    
+    <div id="right">
+      <button onclick='toggleVisibility()' >Обучение другим специальностям</button>
+      
+        <div class="open1" style="display: none;" id="Another">
+          <hr>
+        <h4>Волгоградский энергетический колледж</h4>
+        <h5>Года: 2016-2020 </h5>
+      
+        <h4>Волгоградский государственный технический университет</h4>
+        <h5>Года: 2021-2025 </h5>
+        </div>
+        
+      
+      
+      <button onclick='toggleVisibility2()' >Образование программирования</button>
+      <div class="open2" id="Prog">
+        <hr>
+         <h4>Курс SkillFactory - FullStack - разработчик</h4>
+         <h5>Года: 2023-2025</h5>
+      </div>
+                   
+      <button onclick='toggleVisibility3()' >Знания</button>
+      <div class="open3" id="Znan">
+        <hr>
+      <ul>
+        <li>CSS</li>
+        <li>HTML</li>
+        <li>JavaScript</li>
+        <li>PHP</li>
+        <li>SQL</li>
+        <li>C#</li>
+      </ul>
+      </div>
+      
+      <button onclick='toggleVisibility4()' >Увлечения</button>
+      <div class="open4" id="Uvl">
+        <hr>
+      <ul class="funky">
+        <li>Изучать что-то новое</li>
+        <li>Стремиться к поставленным целям</li>
+        <li>Читать книги</li>
+        <li>Слушать музыку</li>
+        <li>Учиться:)</li>
+      </ul>
+      </div>
+    </div>
+  </div>
+            
+  </body>
+  <script src="index.js"></script> 
+</html>
